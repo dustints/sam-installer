@@ -1,0 +1,280 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    adrien-alternatives (0.2.0)
+    puppetlabs-apache (1.1.1)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.4.0)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.1.2)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs-stdlib (4.4.0)
+    puppetlabs-vcsrepo (1.1.0)
+    puppetlabs-xinetd (1.3.1)
+      puppetlabs-stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/Katello/puppet-candlepin
+  ref: master
+  sha: 60949d84c6dd25af72c66fabead081c945f1be1e
+  specs:
+    katello-candlepin (0.1.0)
+      puppetlabs-concat (>= 1.1.1)
+      puppetlabs-postgresql (>= 3.0.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      theforeman-concat_native (>= 1.3.0)
+      theforeman-foreman (>= 1.5.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-capsule
+  ref: master
+  sha: 59e2aa33d3ac8d7ddc56538218e50f4053173935
+  specs:
+    katello-capsule (0.0.1)
+
+GIT
+  remote: https://github.com/Katello/puppet-certs
+  ref: master
+  sha: b6e31c25d629ea2300564a522259b51c4ca9f6a7
+  specs:
+    katello-certs (0.1.0)
+      katello-common (>= 0.0.1)
+      puppetlabs-stdlib (>= 1.0.0)
+      theforeman-foreman (>= 1.5.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-common
+  ref: master
+  sha: d52c6178588e50823bbaf35641ab40301637b449
+  specs:
+    katello-common (0.0.1)
+
+GIT
+  remote: https://github.com/Katello/puppet-crane
+  ref: master
+  sha: e440fbc6ff0290e2c1833a8d8205839a69bd9751
+  specs:
+    katello-crane (0.1.0)
+      katello-certs (>= 0.1.0)
+      katello-common (>= 0.0.1)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-elasticsearch
+  ref: master
+  sha: 0b808851dccd5ed3f4aa66d15f747b7a49427807
+  specs:
+    katello-elasticsearch (0.0.1)
+
+GIT
+  remote: https://github.com/Katello/puppet-katello
+  ref: master
+  sha: 117002af31fd06fb455402018ba1a5c5a8aaf260
+  specs:
+    katello-katello (0.1.0)
+      katello-candlepin (>= 0.1.0)
+      katello-certs (>= 0.1.0)
+      katello-common (>= 0.0.1)
+      katello-crane (>= 0.1.0)
+      katello-elasticsearch (>= 0.0.1)
+      katello-pulp (>= 0.1.0)
+      katello-qpid (>= 0.1.0)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-mongodb (>= 0)
+      puppetlabs-postgresql (>= 3.0.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      puppetlabs-xinetd (>= 1.3.1)
+      theforeman-concat_native (>= 1.3.1)
+      theforeman-foreman (>= 1.5.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-katello_devel
+  ref: master
+  sha: 6ad275176b2be770e7d36658777ade0d8b4e3763
+  specs:
+    katello-katello_devel (0.1.0)
+      katello-candlepin (>= 0.1.0)
+      katello-certs (>= 0.1.0)
+      katello-common (>= 0.0.1)
+      katello-crane (>= 0.1.0)
+      katello-elasticsearch (>= 0.0.1)
+      katello-katello (>= 0.1.0)
+      katello-pulp (>= 0.1.0)
+      katello-qpid (>= 0.1.0)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-mongodb (>= 0)
+      puppetlabs-postgresql (>= 3.0.0)
+      puppetlabs-stdlib (>= 1.0.0)
+      puppetlabs-vcsrepo (>= 0)
+      theforeman-concat_native (>= 1.3.1)
+      theforeman-foreman (>= 1.5.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-pulp
+  ref: master
+  sha: 6307cd92e12105929e027aa9503e97ca07a715d6
+  specs:
+    katello-pulp (0.1.0)
+      katello-qpid (>= 0.1.0)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-mongodb (>= 0)
+      puppetlabs-stdlib (>= 1.0.0)
+      theforeman-concat_native (>= 1.3.0)
+      theforeman-foreman (>= 1.5.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-qpid
+  ref: master
+  sha: 737c5c91c9d1e9a4b22441c4280271901e2a1840
+  specs:
+    katello-qpid (0.1.0)
+      puppetlabs-stdlib (>= 1.0.0)
+
+GIT
+  remote: https://github.com/Katello/puppet-service_wait
+  ref: master
+  sha: 2ee76690efd020ab5b37e0d5016a4b6c720e2f9d
+  specs:
+    katello-service_wait (0.0.1)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-firewall
+  ref: 1.0.0
+  sha: 97897badae934f9510709a95c94e23b691d005eb
+  specs:
+    puppetlabs-firewall (1.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-mongodb
+  ref: master
+  sha: fe562b86f388a6d107bb1f3cb3b32a3978f59c2a
+  specs:
+    puppetlabs-mongodb (0.9.0)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.2.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-mysql
+  ref: 2.2.0
+  sha: 1bc459d05bb43c5937fae6e65b7c77659432c76b
+  specs:
+    puppetlabs-mysql (2.2.0)
+      puppetlabs-stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-postgresql
+  ref: master
+  sha: 61f86551d829d7e31e69e54e0c7160374b535648
+  specs:
+    puppetlabs-postgresql (4.1.0)
+      puppetlabs-apt (< 2.0.0, >= 1.1.0)
+      puppetlabs-concat (< 2.0.0, >= 1.1.0)
+      puppetlabs-stdlib (~> 4.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-concat
+  ref: master
+  sha: 35fe58d9193edfd321d8691243e1c9ffa3291229
+  specs:
+    theforeman-concat_native (1.3.1)
+
+GIT
+  remote: https://github.com/theforeman/puppet-dhcp
+  ref: master
+  sha: ac5b79c73b7bd58fff96d71b65ae5cee294f9ecf
+  specs:
+    theforeman-dhcp (1.3.1)
+      theforeman-concat_native (>= 1.3.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-dns
+  ref: master
+  sha: 0f8b5245ddd9fa14d422bcd459f5fee1638e31ef
+  specs:
+    theforeman-dns (1.4.0)
+      theforeman-concat_native (>= 1.3.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-foreman
+  ref: master
+  sha: f3076fbee6fa16b9a56405eb733ec9e9e7983bf3
+  specs:
+    theforeman-foreman (2.3.0)
+      adrien-alternatives (< 1.0.0, >= 0.2.0)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-apt (< 2.0.0)
+      puppetlabs-postgresql (>= 3.0.0)
+      puppetlabs-stdlib (>= 4.2.0)
+      theforeman-concat_native (>= 1.3.0)
+      theforeman-tftp (>= 1.4.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-foreman_proxy
+  ref: master
+  sha: 4db965b672dd2f6ff483cb1f77c750504a20c8d1
+  specs:
+    theforeman-foreman_proxy (1.6.1)
+      puppetlabs-stdlib (>= 2.3.0)
+      theforeman-dhcp (>= 1.3.0)
+      theforeman-dns (>= 1.3.0)
+      theforeman-foreman (>= 1.3.0)
+      theforeman-puppet (>= 1.3.0)
+      theforeman-tftp (>= 1.3.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-git
+  ref: master
+  sha: 9f008996cf4e7fd02dd305c8c3c10b2a6e8c9daa
+  specs:
+    theforeman-git (1.3.1)
+
+GIT
+  remote: https://github.com/theforeman/puppet-puppet
+  ref: master
+  sha: 2397861891ef9b548ebdda83fb435731cbfca439
+  specs:
+    theforeman-puppet (2.1.2)
+      puppetlabs-apache (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (>= 2.0.0)
+      theforeman-concat_native (>= 1.3.0)
+      theforeman-foreman (>= 1.3.0)
+      theforeman-git (>= 1.3.0)
+
+GIT
+  remote: https://github.com/theforeman/puppet-tftp
+  ref: master
+  sha: 55387e968167d98fa523ccaac1fc5f3bf9ebc59b
+  specs:
+    theforeman-tftp (1.4.3)
+      puppetlabs-xinetd (< 2.0.0, >= 1.1.0)
+
+DEPENDENCIES
+  katello-candlepin (>= 0)
+  katello-capsule (>= 0)
+  katello-certs (>= 0)
+  katello-common (>= 0)
+  katello-crane (>= 0)
+  katello-elasticsearch (>= 0)
+  katello-katello (>= 0)
+  katello-katello_devel (>= 0)
+  katello-pulp (>= 0)
+  katello-qpid (>= 0)
+  katello-service_wait (>= 0)
+  puppetlabs-apache (= 1.1.1)
+  puppetlabs-firewall (>= 0)
+  puppetlabs-mongodb (>= 0)
+  puppetlabs-mysql (>= 0)
+  puppetlabs-postgresql (>= 0)
+  puppetlabs-vcsrepo (>= 0)
+  theforeman-concat_native (>= 0)
+  theforeman-dhcp (>= 0)
+  theforeman-dns (>= 0)
+  theforeman-foreman (>= 0)
+  theforeman-foreman_proxy (>= 0)
+  theforeman-git (>= 0)
+  theforeman-puppet (>= 0)
+  theforeman-tftp (>= 0)
+
